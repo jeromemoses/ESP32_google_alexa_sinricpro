@@ -42,13 +42,13 @@ WiFiManager wifiManager;
 
 #include <map>
 
-#define WIFI_SSID         "MedCuore"    
-#define WIFI_PASS         "@Medcuore2020"
-#define APP_KEY           "7a6855c7-247d-4403-b7f0-5680bcd57d0d"      // Should look like "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
-#define APP_SECRET        "d2deb958-a406-4f47-a032-1a0d1032b336-a553a24c-f345-4f4c-949b-30dc04803503"   // Should look like "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
+#define WIFI_SSID         "xxxxxxxxxx"    
+#define WIFI_PASS         "xxxxxxxxxx"
+#define APP_KEY           "xxxxxxxxxxxxxxxxxxxxxxx"      // Should look like "de0bxxxx-1x3x-4x3x-ax2x-5dabxxxxxxxx"
+#define APP_SECRET        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"   // Should look like "5f36xxxx-x3x7-4x3x-xexe-e86724a9xxxx-4c4axxxx-3x3x-x5xe-x9x3-333d65xxxxxx"
 
 //Enter the device IDs here
-#define device_ID_1   "634d05fa134b2df11ccdaed2"
+#define device_ID_1   "SWITCH_ID_NO_2_HERE"
 #define device_ID_2   "SWITCH_ID_NO_2_HERE"
 #define device_ID_3   "SWITCH_ID_NO_3_HERE"
 #define device_ID_4   "SWITCH_ID_NO_4_HERE"
@@ -165,8 +165,6 @@ void handleFlipSwitches() {
 void setupWiFi()
 {
   Serial.printf("\r\n[Wifi]: Connecting");
-  WiFi.begin(WIFI_SSID, WIFI_PASS);
-
    wifiManager.setTimeout(150);  // hotspot visibility for 5 minutes
    wifiManager.autoConnect("vcd_esp32","vcd_esp32"); 
 
